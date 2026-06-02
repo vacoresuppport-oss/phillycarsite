@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-philly-navy: #050B1B;
+  --color-philly-blue: #1E40AF;
+  --color-philly-red: #D92121;
+  --color-philly-silver: #E2E8F0;
+  --color-philly-metal: #94A3B8;
+}
+
+@layer base {
+  body {
+    @apply bg-philly-navy text-white font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+.glass-nav {
+  @apply sticky top-0 z-50 bg-philly-navy/80 backdrop-blur-md border-b border-white/10;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-full bg-philly-red hover:bg-red-700 text-white font-semibold transition-all shadow-lg hover:shadow-red-900/40 hover:-translate-y-0.5;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold border border-white/20 transition-all backdrop-blur-sm;
+}
+
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-philly-silver to-philly-metal;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Philly Car Rentals",
+  "description": "Premium, SEO-optimized car rental services in Philadelphia. Affordable, fast approval, and a diverse fleet from economy to luxury vehicles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
